@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "gsap": "^3.15.0"
-=======
   "name": "clean-portfolio",
   "version": "1.0.0",
   "private": true,
@@ -20,6 +16,5 @@
     "@react-three/drei": "^9.112.0",
     "@react-three/rapier": "^1.4.0",
     "meshline": "^3.3.1"
->>>>>>> 5d0a5a36c65ca74bad510a7dfab8d02852ef1b54
   }
 }
