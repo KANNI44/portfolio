@@ -544,7 +544,7 @@ export default function Home() {
       <main className={loaded ? "reveal-root in" : "reveal-root"}>
         <section className="hero">
           <div className="hero-text">
-            <p className="eyebrow">Frontend developer, Bengaluru</p>
+            <p className="eyebrow">Frontend developer</p>
             <h1>
               I build interfaces that feel <em>considered</em>, not assembled.
             </h1>
