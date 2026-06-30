@@ -972,6 +972,8 @@ export default function Home() {
 
         .reveal-root {
           opacity: 0;
+          width: 100%;
+          overflow-x: hidden;
         }
         .reveal-root.in {
           opacity: 1;
