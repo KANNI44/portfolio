@@ -1559,9 +1559,13 @@ export default function Home() {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 420px;
-          height: 420px;
+          width: min(420px, 90vw);
+          height: min(420px, 90vw);
           flex-shrink: 0;
+        }
+        .orbit-wrap svg {
+          width: 100%;
+          height: 100%;
         }
 
         .about-text {
@@ -1625,6 +1629,8 @@ export default function Home() {
             grid-template-columns: 1fr;
             padding-top: 7rem;
             text-align: left;
+            min-height: auto;
+            gap: 1.5rem;
           }
           .hero-photo {
             order: -1;
@@ -1644,6 +1650,17 @@ export default function Home() {
             max-width: 300px;
             height: 340px;
           }
+          .hero-sub {
+            max-width: 100%;
+          }
+          .hero-cta {
+            flex-wrap: wrap;
+          }
+          .showcase,
+          .about,
+          .skills-section {
+            padding-top: 5rem;
+          }
           .project-grid {
             grid-template-columns: 1fr;
           }
@@ -1660,11 +1677,22 @@ export default function Home() {
           .strip-col-3 {
             display: none;
           }
+          .skills-tabs {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+          }
+          .skills-tab {
+            white-space: nowrap;
+          }
           .tech-grid {
             grid-template-columns: repeat(3, 1fr);
           }
           .cert-grid {
             grid-template-columns: 1fr;
+          }
+          .skill-proj-row {
+            flex-wrap: wrap;
           }
           .skill-proj-note {
             display: none;
@@ -1675,6 +1703,78 @@ export default function Home() {
           .about-mark {
             order: -1;
             margin-bottom: 1rem;
+          }
+          .footer-links {
+            flex-wrap: wrap;
+            gap: 1.2rem;
+          }
+        }
+
+        /* ── SMALL TABLETS / LARGE PHONES ── */
+        @media (max-width: 600px) {
+          .hero {
+            padding-top: 6rem;
+          }
+          .hero-scene {
+            height: 320px;
+          }
+          .card3d-wrap {
+            max-width: 260px;
+            height: 290px;
+          }
+          .hero-cta {
+            flex-direction: column;
+            align-items: stretch;
+          }
+          .btn-primary,
+          .btn-ghost {
+            text-align: center;
+          }
+          .pre-stack {
+            width: 240px;
+            height: 165px;
+          }
+          .tech-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .strip-card {
+            width: 130px;
+            height: 95px;
+          }
+          .cert-card {
+            flex-wrap: wrap;
+          }
+          .cert-year {
+            width: 100%;
+            text-align: left;
+            margin-top: 0.4rem;
+          }
+        }
+
+        /* ── SMALL PHONES ── */
+        @media (max-width: 420px) {
+          .hero-text h1 {
+            font-size: 1.7rem;
+          }
+          .showcase h2,
+          .skills-heading,
+          .strip-heading {
+            font-size: 1.3rem;
+          }
+          .window-body {
+            padding: 1rem;
+          }
+          .tech-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.6rem;
+          }
+          .pre-label {
+            top: 1.2rem;
+            left: 1.2rem;
+          }
+          .pre-counter {
+            bottom: 1.2rem;
+            right: 1.2rem;
           }
         }
 
