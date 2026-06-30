@@ -18,6 +18,12 @@ export const metadata = {
     "Full stack developer portfolio — React, Next.js, Tailwind, Node.js, MongoDB.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
